@@ -12,30 +12,33 @@ import "./TopicsContent.scss";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { confirmLustQuiz } from "../../redux/action";
+import { useTranslation } from "react-i18next";
 
 export const TopicsContent = () => {
-  const contentArr = [
-    "What are your favorite topics?",
-    "Choose up to 3 topics you like",
-  ];
-
-  const topicsArr = [
-    { value: "Werewolf", image: werewolf },
-    { value: "Action", image: action },
-    { value: "Royal Obsession", image: royalObsession },
-    { value: "Romance", image: romance },
-    { value: "Young Adult", image: youngAdult },
-    { value: "Bad Boy", image: badBoy },
-    { value: "Billionaire", image: billionaire },
-  ];
-
   const stateTopicsArr = useSelector((state) => state.topicsArr);
   const [active, setActive] = useState(false);
   const dispatch = useDispatch();
+  const language =  JSON.parse(localStorage.getItem("language"));
+  const { t, i18n } = useTranslation();
+
+  const contentArr = [
+    t(`${language}.quiz_5.header.one`),
+    t(`${language}.quiz_5.header.two`),
+  ];
+
+  const topicsArr = [
+    { value: t(`${language}.quiz_5.variants.one`), image: werewolf },
+    { value: t(`${language}.quiz_5.variants.two`), image: action },
+    { value: t(`${language}.quiz_5.variants.three`), image: royalObsession },
+    { value: t(`${language}.quiz_5.variants.four`), image: romance },
+    { value: t(`${language}.quiz_5.variants.five`), image: youngAdult },
+    { value: t(`${language}.quiz_5.variants.six`), image: badBoy },
+    { value: t(`${language}.quiz_5.variants.seven`), image: billionaire },
+  ];
 
   useEffect(() => {
     stateTopicsArr.length < 3 ? setActive(false) : setActive(true);
-    localStorage.setItem('topicsArr', JSON.stringify(stateTopicsArr));
+    localStorage.setItem("topicsArr", JSON.stringify(stateTopicsArr));
   }, [stateTopicsArr]);
 
   const handleClick = () => {
@@ -57,7 +60,7 @@ export const TopicsContent = () => {
           handleClick={handleClick}
           goTo={"/email"}
         >
-          Next
+         { t(`${language}.quiz_5.confirmButton`)}
         </ConfirmButton>
       </div>
     </>

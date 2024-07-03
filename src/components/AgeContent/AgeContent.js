@@ -1,22 +1,30 @@
 import { Link } from "react-router-dom";
 import { QuestionContent } from "../QuestionContent/QuestionContent";
 import "./AgeContent.scss";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { chooseAge } from "../../redux/action";
+import { useTranslation } from "react-i18next";
 
 export const AgeContent = () => {
-  const ageArr = ["18-29 years", "30-39 years", "40-49 years", "50+"];
-
   const dispatch = useDispatch();
+  const language =  JSON.parse(localStorage.getItem("language"));
+  const { t, i18n } = useTranslation();
+
+  const ageArr = [
+    t(`${language}.quiz_3.variants.one`),
+    t(`${language}.quiz_3.variants.two`),
+    t(`${language}.quiz_3.variants.three`),
+    t(`${language}.quiz_3.variants.four`),
+  ];
 
   const handleClick = (value) => {
     dispatch(chooseAge(value));
-    localStorage.setItem('age', JSON.stringify(value));
+    localStorage.setItem("age", JSON.stringify(value));
   };
 
   return (
     <div className="ageContentContainer">
-      <span className="ageQuestionContent">What is your age?</span>
+      <span className="ageQuestionContent">{t(`${language}.quiz_3.header`)}</span>
 
       <ul className="listOfOption">
         {ageArr.map((el) => (

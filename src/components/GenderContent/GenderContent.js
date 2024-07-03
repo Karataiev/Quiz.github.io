@@ -6,29 +6,32 @@ import other from "../../assets/icons/other.png";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { chooseGender } from "../../redux/action";
+import { useTranslation } from "react-i18next";
 
 export const GenderContent = () => {
+  const language =  JSON.parse(localStorage.getItem("language"));
+  const { t, i18n } = useTranslation();
+  const dispatch = useDispatch();
+
   const contentArr = [
-    "What gender do you identify with?",
-    "Please share how do you identify yourself",
+    t(`${language}.quiz_2.header.one`),
+    t(`${language}.quiz_2.header.two`),
   ];
 
   const genderArr = [
     {
-      type: "Female",
+      type: t(`${language}.quiz_2.variants.one`),
       icon: female,
     },
     {
-      type: "Male",
+      type: t(`${language}.quiz_2.variants.two`),
       icon: male,
     },
     {
-      type: "Other",
+      type: t(`${language}.quiz_2.variants.three`),
       icon: other,
     },
   ];
-
-  const dispatch = useDispatch();
 
   const handleClick = (value) => {
     dispatch(chooseGender(value));

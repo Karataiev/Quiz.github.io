@@ -1,6 +1,7 @@
 import "./DownloadComponent.scss";
 import download from "../../assets/icons/download.svg";
 import { CSVLink } from "react-csv";
+import { useTranslation } from "react-i18next";
 
 export const DownloadComponent = () => {
   const language = JSON.parse(localStorage.getItem("language"));
@@ -9,6 +10,7 @@ export const DownloadComponent = () => {
   const hateArr = JSON.parse(localStorage.getItem("hateArr"));
   const topicsArr = JSON.parse(localStorage.getItem("topicsArr"));
   const email = JSON.parse(localStorage.getItem("email"));
+  const { t, i18n } = useTranslation();
 
   const headers = [
     { label: "order", key: "info.number" },
@@ -71,7 +73,7 @@ export const DownloadComponent = () => {
         target="_blank"
       >
         <img src={download} />
-        <span>Download my answers</span>
+        <span>{ t(`${language}.gratitude.button`)}</span>
       </CSVLink>
     </div>
   );

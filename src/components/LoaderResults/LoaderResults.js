@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import "./LoaderResults.scss";
+import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 export const LoaderResults = () => {
   const [progress, setProgress] = useState(0);
+  const language =  JSON.parse(localStorage.getItem("language"));
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const timer = setInterval(
@@ -22,7 +26,7 @@ export const LoaderResults = () => {
           <div className="circle-core"> </div>
         </div>
       </div>
-      <span className="progressMessage">Finding collections for you...</span>
+      <span className="progressMessage">{t(`${language}.loading`)}</span>
     </div>
   );
 };

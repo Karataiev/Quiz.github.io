@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./EmailBlock.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { isValidEmail } from "../../redux/action";
+import { useTranslation } from "react-i18next";
 
 export const EmailBlock = () => {
   const [value, setValue] = useState("");
@@ -9,6 +10,8 @@ export const EmailBlock = () => {
 
   const dispatch = useDispatch();
   const isValid = useSelector((state) => state.isValidEmail);
+  const language =  JSON.parse(localStorage.getItem("language"));
+  const { t, i18n } = useTranslation();
 
   const EMAIL_REGEXP =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
@@ -42,7 +45,7 @@ export const EmailBlock = () => {
   return (
     <div className="emailBlockContainer">
       <input
-        placeholder="Your email"
+        placeholder={t(`${language}.email.placeholder`)}
         type="email"
         value={value}
         onChange={(e) => setValue(e.target.value)}

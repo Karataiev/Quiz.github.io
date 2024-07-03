@@ -3,16 +3,19 @@ import { ConfirmButton } from "../ConfirmButton/ConfirmButton";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { HateListItem } from "../HateListItem/HateListItem";
+import { useTranslation } from "react-i18next";
 
 export const HateContent = () => {
   const [active, setActive] = useState(false);
   const stateHateArr = useSelector((state) => state.hateArr);
+  const language = JSON.parse(localStorage.getItem("language"));
+  const { t, i18n } = useTranslation();
 
   const hateArr = [
-    "Lack of logic",
-    "A slow speed",
-    "Lack of humor",
-    "Way too generic ending",
+    t(`${language}.quiz_4.variants.one`),
+    t(`${language}.quiz_4.variants.two`),
+    t(`${language}.quiz_4.variants.three`),
+    t(`${language}.quiz_4.variants.four`),
   ];
 
   useEffect(() => {
@@ -20,13 +23,13 @@ export const HateContent = () => {
   }, [stateHateArr]);
 
   const handleClick = (e) => {
-    localStorage.setItem('hateArr', JSON.stringify(stateHateArr));
+    localStorage.setItem("hateArr", JSON.stringify(stateHateArr));
   };
 
   return (
     <div className="hateContentContainer">
       <span className="hateQuestionContent">
-        What do you <span>hate</span> the most in a book?
+        {t(`${language}.quiz_4.header`)}
       </span>
 
       <ul className="listOfOption">
@@ -40,7 +43,7 @@ export const HateContent = () => {
         goTo={!active || "/quiz/5"}
         active={active}
       >
-        Next
+        {t(`${language}.quiz_4.confirmButton`)}
       </ConfirmButton>
     </div>
   );

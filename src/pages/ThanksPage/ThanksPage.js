@@ -4,10 +4,12 @@ import { DownloadComponent } from "../../components/DownloadComponent/DownloadCo
 import { ConfirmButton } from "../../components/ConfirmButton/ConfirmButton";
 import { useDispatch, useSelector } from "react-redux";
 import { cleanStore } from "../../redux/action";
-import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export const ThanksPage = () => {
   const dispatch = useDispatch();
+  const language =  JSON.parse(localStorage.getItem("language"));
+  const { t, i18n } = useTranslation();
 
   const handleClick = () => {
     dispatch(cleanStore(""));
@@ -16,14 +18,14 @@ export const ThanksPage = () => {
   return (
     <div className="thanksPageContainer">
       <div>
-        <span className="thanksHeader">Thank you</span>
-        <span className="thanksInfo">for supporting us and passing quiz</span>
+        <span className="thanksHeader">{ t(`${language}.gratitude.header.one`)}</span>
+        <span className="thanksInfo">{ t(`${language}.gratitude.header.two`)}</span>
       </div>
 
       <img src={done} />
       <DownloadComponent />
       <ConfirmButton active={true} goTo={"/"} handleClick={handleClick}>
-        Retake quiz
+      { t(`${language}.gratitude.confirmButton`)}
       </ConfirmButton>
     </div>
   );

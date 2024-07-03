@@ -1,58 +1,69 @@
 {
   "German": {
     "quiz_1": {
-      "header": ["Was ist Ihre bevorzugte Sprache?", "Sprache wählen"],
+      "header": {
+        "one": "Was ist Ihre bevorzugte Sprache?",
+        "two": "Sprache wählen"
+      },
       "variants": ["Englisch", "Französisch", "Deutsch", "Spanisch"]
     },
     "quiz_2": {
-      "header": [
-        "Mit welchem ​​Geschlecht identifizierst du dich?",
-        "Bitte teilen Sie uns mit, wie Sie sich identifizieren"
-      ],
-      "variants": ["Weiblich", "Männlich", "Andere"]
+      "header": {
+        "one": "Mit welchem ​​Geschlecht identifizierst du dich?",
+        "two": "Bitte teilen Sie uns mit, wie Sie sich identifizieren"
+      },
+      "variants": { "one": "Weiblich", "two": "Männlich", "three": "Andere" }
     },
     "quiz_3": {
-      "header": ["Wie alt bist Du?"],
-      "variants": ["18-29 jahre", "30-39 jahre", "40-49 jahre", "50+"]
+      "header": "Wie alt bist Du?",
+      "variants": {
+        "one": "18-29 jahre",
+        "two": "30-39 jahre",
+        "three": "40-49 jahre",
+        "four": "50+"
+      }
     },
     "quiz_4": {
-      "header": ["Was hassen Sie an einem Buch am meisten?"],
-      "variants": [
-        "Mangelnde Logik",
-        "Eine langsame geschwindigkeit",
-        "Mangel an humor",
-        "Viel zu generisches ende"
-      ],
+      "header": "Was hassen Sie an einem Buch am meisten?",
+      "variants": {
+        "one": "Mangelnde Logik",
+        "two": "Eine langsame geschwindigkeit",
+        "three": "Mangel an humor",
+        "four": "Viel zu generisches ende"
+      },
       "confirmButton": "Nächste"
     },
     "quiz_5": {
-      "header": [
-        "Was sind Ihre Lieblingsthemen?",
-        "Wählen Sie bis zu 3 Themen aus, die Ihnen gefallen"
-      ],
-      "variants": [
-        "Werwolf",
-        "Aktion",
-        "Königliche Besessenheit",
-        "Romantik",
-        "Junge Erwachsene",
-        "Böser Bub",
-        "Milliardärin"
-      ],
+      "header": {
+        "one": "Was sind Ihre Lieblingsthemen?",
+        "two": "Wählen Sie bis zu 3 Themen aus, die Ihnen gefallen"
+      },
+      "variants": {
+        "one": "Werwolf",
+        "two": "Aktion",
+        "three": "Königliche Besessenheit",
+        "four": "Romantik",
+        "five": "Junge Erwachsene",
+        "six": "Böser Bub",
+        "seven": "Milliardärin"
+      },
       "confirmButton": "Nächste"
     },
     "loading": "Sammlungen für Sie finden...",
     "email": {
-      "header": [
-        "Email",
-        "Geben sie ihre E-Mail ein, um vollen zugriff zu erhalten"
-      ],
+      "header": {
+        "one": "Email",
+        "two": "Geben sie ihre E-Mail ein, um vollen zugriff zu erhalten"
+      },
       "placeholder": "Deine email",
       "policy": "Indem ich fortfahre, stimme ich den datenschutzbestimmungen und nutzungsbedingungen zu.",
       "confirmButton": "Nächste"
     },
     "gratitude": {
-      "header": ["Danke", "für die unterstützung und das bestehen des quiz"],
+      "header": {
+        "one": "Danke",
+        "two": "für die unterstützung und das bestehen des quiz"
+      },
       "button": "Meine antworten herunterladen",
       "confirmButton": "Quiz wiederholen"
     }
