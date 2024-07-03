@@ -1,0 +1,14 @@
+.topicsContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+
+  .topicsList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin-top: 27px;
+    gap: 8px;
+  }
+}

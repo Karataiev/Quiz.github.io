@@ -1,0 +1,38 @@
+.emailBlockContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 56px;
+  width: 100%;
+
+  input {
+    padding: 20px 26px;
+    width: 100%;
+    background-color: #36173d;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+
+    &:focus {
+      border: 2px solid #e4229c;
+    }
+  }
+
+  .blur {
+    border: 2px solid red;
+  }
+
+  .errorMessage {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+    color: red;
+    margin-top: 12px;
+  }
+}

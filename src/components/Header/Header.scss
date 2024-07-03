@@ -1,0 +1,48 @@
+.headerContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  .stepsBlock {
+    display: flex;
+    position: relative;
+
+    .backBtn {
+      position: absolute;
+      height: 24.8px;
+      width: 10px;
+      background-image: url("../../assets/icons/move-back.svg");
+      background-color: inherit;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+    }
+
+    .steps {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 800;
+
+      .currentStep {
+        color: #e4229c;
+      }
+    }
+  }
+
+  .progressBar {
+    width: 100%;
+    height: 4px;
+    margin-top: 17px;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+
+    .progress {
+      height: 4px;
+      background-color: #e4229c;
+    }
+  }
+}

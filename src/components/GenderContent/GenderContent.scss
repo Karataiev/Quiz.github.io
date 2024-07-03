@@ -1,0 +1,38 @@
+.genderContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+
+  .listOfOption {
+    display: flex;
+    margin-top: 44px;
+    padding: 0;
+    list-style: none;
+    gap: 12px;
+
+    li {
+      width: 31%;
+
+      .linkContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 144px;
+        gap: 12px;
+        background-color: #36173d;
+        border-radius: 12px;
+
+        img {
+          height: 52px;
+          width: 52px;
+        }
+
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

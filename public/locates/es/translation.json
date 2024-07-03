@@ -1,0 +1,60 @@
+{
+  "Spanish": {
+    "quiz_1": {
+      "header": ["¿Cuál es tu idioma preferido?", "Elige lengua"],
+      "variants": ["Inglés", "Francés", "Alemán", "Español"]
+    },
+    "quiz_2": {
+      "header": [
+        "¿Con qué género te identificas?",
+        "Por favor comparte como te identificas"
+      ],
+      "variants": ["Femenina", "Masculina", "Otra"]
+    },
+    "quiz_3": {
+      "header": ["¿Cuál es tu edad?"],
+      "variants": ["18-29 años", "30-39 años", "40-49 años", "50+"]
+    },
+    "quiz_4": {
+      "header": ["¿Qué es lo que más odias en un libro?"],
+      "variants": [
+        "Falta de logica",
+        "Una velocidad lenta",
+        "Falta de humor",
+        "Final demasiado genérico."
+      ],
+      "confirmButton": "Próxima"
+    },
+    "quiz_5": {
+      "header": [
+        "¿Cuales son tus temas favoritos?",
+        "Elige hasta 3 temas que te gusten"
+      ],
+      "variants": [
+        "Hombre-lobo",
+        "Acción",
+        "Obsesión real",
+        "Romance",
+        "Adulta Joven",
+        "Chico malo",
+        "Multimillonaria"
+      ],
+      "confirmButton": "Próxima"
+    },
+    "loading": "Encontrar colecciones para ti...",
+    "email": {
+      "header": [
+        "Correo electrónico",
+        "Ingrese su correo electrónico para obtener acceso completo"
+      ],
+      "placeholder": "Tu correo electrónico",
+      "policy": "Al continuar, acepto la Política de privacidad y los Términos de uso.",
+      "confirmButton": "Próxima"
+    },
+    "gratitude": {
+      "header": ["Gracias", "por apoyarnos y aprobar el cuestionario"],
+      "button": "Descarga mis respuestas",
+      "confirmButton": "Volver a hacer el cuestionario"
+    }
+  }
+}

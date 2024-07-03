@@ -1,0 +1,29 @@
+.confirmButton {
+  display: flex;
+  width: 100%;
+  margin-top: 26px;
+  border: none;
+  border-radius: 16px;
+  background-color: #e4229c;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+
+  .linkBtn {
+    padding: 16px 0;
+    width: 100%;
+  }
+}
+
+.disabled {
+  opacity: 40%;
+}
+
+.topicsBtn {
+  margin-top: 64px;
+}
+
+.emailBtn {
+  margin-top: 170px;
+}

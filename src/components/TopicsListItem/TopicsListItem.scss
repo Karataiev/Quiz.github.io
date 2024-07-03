@@ -1,0 +1,30 @@
+.topicsListItem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+  width: 88px;
+  background-color: #36173d;
+  border-radius: 50%;
+  gap: 6px;
+
+  input {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  span {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+.topicsListItem:nth-child(2n) {
+  margin-top: 25px;
+}
+
+.checkedItem {
+  border: 2px solid #e4229c;
+}

@@ -1,0 +1,29 @@
+.downloadComponentContainer {
+  padding-top: 151px;
+
+  .CSVButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    height: 42px;
+
+    img {
+      width: 42px;
+      height: 42px;
+      border: none;
+      margin: 0;
+      background-color: inherit;
+    }
+
+    span {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 25px;
+      color: white;
+      margin-left: 8px;
+    }
+  }
+}

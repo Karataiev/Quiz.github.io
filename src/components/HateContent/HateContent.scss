@@ -1,0 +1,60 @@
+.hateContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  //   height: 440px;
+
+  .hateQuestionContent {
+    width: 100%;
+
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 38px;
+    text-align: center;
+
+    span {
+      color: #e4229c;
+    }
+  }
+
+  .listOfOption {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
+    margin-top: 24px;
+    gap: 12px;
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 26px 20px;
+      border: 2px solid transparent;
+      border-radius: 16px;
+      background-color: #36173d;
+      font-size: 17px;
+      font-weight: 500;
+
+      .checkbox {
+        width: 23px;
+        height: 23px;
+        background-color: #6d4376;
+        border: 1px solid #e4229b;
+        border-radius: 8px;
+      }
+    }
+
+    .checkedParent {
+      border: 2px solid #e4229c;
+      background-color: #e4229b33;
+    }
+
+    .checkedChild {
+      background-image: url(../../assets/icons/checked.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

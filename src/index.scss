@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "NunitoSans";
+  src: url("./assets/NanitoSuns/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: "NunitoSans";
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #1f002b;
+  padding: 59px 24px 24px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
