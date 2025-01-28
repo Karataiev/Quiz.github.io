@@ -1,0 +1,71 @@
+{
+  "French": {
+    "quiz_1": {
+      "header": {
+        "one": "Quelle est votre langue préférée ?",
+        "two": "Choisissez la langue"
+      },
+      "variants": ["Anglais", "Français", "Allemand", "Espagnol"]
+    },
+    "quiz_2": {
+      "header": {
+        "one": " A quel genre vous identifiez-vous ?",
+        "two": " Veuillez partager comment vous vous identifiez "
+      },
+      "variants": { "one": "Femelle", "two": "Mâle", "three": "Autre" }
+    },
+    "quiz_3": {
+      "header": "Quel âge avez-vous?",
+      "variants": {
+        "one": "18-29 ans",
+        "two": "30-39 ans",
+        "three": "40-49 ans",
+        "four": "50+"
+      }
+    },
+    "quiz_4": {
+      "header": "Qu’est-ce que tu détestes le plus dans un livre ?",
+      "variants": {
+        "one": "Manque de logique",
+        "two": "Une vitesse lente",
+        "three": "Manque d'humour",
+        "four": "Une fin bien trop générique"
+      },
+      "confirmButton": "Suivante"
+    },
+    "quiz_5": {
+      "header": {
+        "one": "Quels sont vos sujets favoris ?",
+        "two": "Choisissez jusqu'à 3 sujets que vous aimez"
+      },
+      "variants": {
+        "one": "Loup-garou",
+        "two": "Action",
+        "three": "Obsession royale",
+        "four":  "Romance",
+        "five": "Jeune adulte",
+        "six": "Mauvais garçon",
+        "seven": "Milliardaire"
+      },
+      "confirmButton": "Suivante"
+    },
+    "loading": "Trouver des collections pour vous...",
+    "email": {
+      "header": {
+        "one": "Email",
+        "two": "Entrez votre email pour obtenir un accès complet"
+      },
+      "placeholder": "Votre email",
+      "policy": "En continuant, j'accepte la politique de confidentialité et les conditions d'utilisation.",
+      "confirmButton": "Suivante"
+    },
+    "gratitude": {
+      "header": {
+        "one": "Merci",
+        "two": "pour nous avoir soutenu et avoir réussi le quiz"
+      },
+      "button": "Téléchargez mes réponses",
+      "confirmButton": "Reprendre le quiz"
+    }
+  }
+}
