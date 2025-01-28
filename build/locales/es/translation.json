@@ -1,0 +1,71 @@
+{
+  "Spanish": {
+    "quiz_1": {
+      "header": {
+        "one": "Was ist Ihre bevorzugte Sprache?",
+        "two": "Sprache wählen"
+      },
+      "variants": ["Englisch", "Französisch", "Deutsch", "Spanisch"]
+    },
+    "quiz_2": {
+      "header": {
+        "one": "¿Con qué género te identificas?",
+        "two": "Por favor comparte como te identificas"
+      },
+      "variants": { "one": "Femenina", "two": "Masculina", "three": "Otra" }
+    },
+    "quiz_3": {
+      "header": "¿Cuál es tu edad?",
+      "variants": {
+        "one": "18-29 años",
+        "two": "30-39 años",
+        "three": "40-49 años",
+        "four": "50+"
+      }
+    },
+    "quiz_4": {
+      "header": "¿Qué es lo que más odias en un libro?",
+      "variants": {
+        "one": "Falta de logica",
+        "two": "Una velocidad lenta",
+        "three": "Falta de humor",
+        "four": "Final demasiado genérico."
+      },
+      "confirmButton": "Próxima"
+    },
+    "quiz_5": {
+      "header": {
+        "one": "¿Cuales son tus temas favoritos?",
+        "two": "Elige hasta 3 temas que te gusten"
+      },
+      "variants": {
+        "one": "Hombre-lobo",
+        "two": "Acción",
+        "three": "Obsesión real",
+        "four": "Romance",
+        "five": "Adulta Joven",
+        "six": "Chico malo",
+        "seven": "Multimillonaria"
+      },
+      "confirmButton": "Próxima"
+    },
+    "loading": "Encontrar colecciones para ti...",
+    "email": {
+      "header": {
+        "one": "Correo electrónico",
+        "two": "Ingrese su correo electrónico para obtener acceso completo"
+      },
+      "placeholder": "Tu correo electrónico",
+      "policy": "Al continuar, acepto la Política de privacidad y los Términos de uso.",
+      "confirmButton": "Próxima"
+    },
+    "gratitude": {
+      "header": {
+        "one": "Gracias",
+        "two": "por apoyarnos y aprobar el cuestionario"
+      },
+      "button": "Descarga mis respuestas",
+      "confirmButton": "Volver a hacer el cuestionario"
+    }
+  }
+}

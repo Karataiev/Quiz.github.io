@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99c206a1.css",
+    "main.js": "/static/js/main.eb9d7b4d.js",
+    "static/media/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf": "/static/media/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.61b71ee93d55d9bddead.ttf",
+    "static/media/young-adult.svg": "/static/media/young-adult.08f133f3651aea24251bbb3110d4154a.svg",
+    "static/media/romance.svg": "/static/media/romance.dc3b141af2fb18bb3d33ef80367ea62e.svg",
+    "static/media/billionaire.svg": "/static/media/billionaire.f730affb09f15a9950f0de32853d63f0.svg",
+    "static/media/bad-boy.svg": "/static/media/bad-boy.768fee2f27d69e7080aef7f8387a956b.svg",
+    "static/media/royal-obsession.svg": "/static/media/royal-obsession.97e2524401343fca9b20b73b066fde87.svg",
+    "static/media/action.svg": "/static/media/action.751d796353a3cf8e322e5a963300ea05.svg",
+    "static/media/werewolf.svg": "/static/media/werewolf.e2487ad3010de607b9057f898c84690c.svg",
+    "static/media/female.png": "/static/media/female.b09cfa9f7aff75d44c01.png",
+    "static/media/other.png": "/static/media/other.36bd6066c583ef0f8de3.png",
+    "static/media/male.png": "/static/media/male.43ef8f07a14fd5a82ae4.png",
+    "static/media/download.svg": "/static/media/download.a9670c30620ff13ac54bdb4fd1961664.svg",
+    "index.html": "/index.html",
+    "static/media/checked.svg": "/static/media/checked.38413d7f3abfaa040684.svg",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "static/media/move-back.svg": "/static/media/move-back.a0c167c8022c42acd152.svg",
+    "main.99c206a1.css.map": "/static/css/main.99c206a1.css.map",
+    "main.eb9d7b4d.js.map": "/static/js/main.eb9d7b4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99c206a1.css",
+    "static/js/main.eb9d7b4d.js"
+  ]
+}
